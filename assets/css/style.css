@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*  1. Từ ngoài vào trong
+    2. Từ trên xuống dưới
+    3. Tổng quan đến chi tiết 
+*/
+
+/*  1. Vị trí
+    2. Kích thước(width)
+    3.Màu sắc
+    4.Kiểu dáng (kiểu chữ, hình tròn, vuông, ....) */
+#main {}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav,
+.subnav {
+    list-style-type: none;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav li a {
+    display: block;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc !important;
+}
+
+#nav>li:hover .subnav {
+    display: block;
+}
+
+#header .search-btn {
+    float: right;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+
+}
+
+#header .search-icon {
+    color: #fff;
+    size: 20px;
+    line-height: 46px;
+    padding: 0 21px;
+
+}
+
+#nav .subnav {
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0, 0, 10px, rgba(0, 0, 0, 0.3);
+}
+
+
+#nav .subnav a {
+    color: #000;
+    line-height: 38px;
+}
+
+
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slide/slider1.jpg') top center/cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 47px;
+    /* Cách căn giữa */
+    width: 100%;
+    /*Cách căn giữa cách 1: left: 50%;
+    transform: translate(-50%); */
+    text-align: center;
+
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content {}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-top:25px ;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top:25px ;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text{
+    font-size: 15px;
+    text-align: justify;
+    margin-top:15px ;
+    line-height: 1.4;
+}
+#content .member-list{
+    margin-top: 48px;
+}
+
+#content .member-item{
+    float: left;
+}
+
+#footer {}
